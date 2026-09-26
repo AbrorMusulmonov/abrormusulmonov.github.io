@@ -1,36 +1,26 @@
-﻿# Abror Musulmonov — academic portfolio
+﻿# Abror Musulmonov
 
-A responsive, static research portfolio for https://abrormusulmonov.github.io/.
-Built with HTML, CSS, and JavaScript. No build step or application dependencies.
+Personal academic website: https://abrormusulmonov.github.io/
 
-## Preview
+Plain HTML and CSS with a small script for the footer year. System fonts, no build step, no external dependencies. The site and CV work with JavaScript disabled.
+
+## Local preview
 
 ```sh
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8080.
+## Editing
 
-## Update
+- `index.html`: biography, research, news, projects, experience, and contact details.
+- `styles.css`: desktop, mobile, and print styles.
+- `assets/Abror_Musulmonov_CV.pdf`: replace this file to update all CV download links.
+- `assets/abror.jpg`: profile photograph, sourced from the owner's GitHub profile.
 
-- Edit biography, research, projects, and experience in `index.html`.
-- Adjust colors, typography, responsive layouts, and print styling in `styles.css`.
-- Navigation highlighting and accessible project filters live in `script.js`.
-- Replace `assets/Abror_Musulmonov_CV.pdf` to update all three CV download links.
-- Replace `assets/abror.jpg` to update the portrait.
+Content is based on the supplied CV. Update role dates and research details as they change.
 
-Content is based on the supplied CV. Profile photograph comes from the owner's GitHub profile. All content is visible without JavaScript; filters appear when JavaScript is available. Fonts use Google Fonts with local fallbacks.
+## Publishing
 
-## GitHub Pages
+GitHub Pages publishes `main` from the repository root. The source repository is private; the website and CV are public. `.nojekyll` enables plain static publishing.
 
-The repository must be named `abrormusulmonov.github.io` under `AbrorMusulmonov`.
-In Settings → Pages, choose **Deploy from a branch**, **main**, **/ (root)**.
-The `.nojekyll` file enables plain static publishing.
-
-Private source repositories require a GitHub plan that supports private-repository Pages.
-The published website and downloadable CV are public even when the source repository is private.
-
-## Verification
-
-Check desktop and mobile layouts, section navigation, each project filter, and all CV download links after changes.
-The PDF served by the site should match the original file exactly.
+After editing, check mobile and desktop layouts, navigation links, and a CV download before pushing to `main`.
