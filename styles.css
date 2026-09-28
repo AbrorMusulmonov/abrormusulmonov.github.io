@@ -169,8 +169,8 @@ main {
   height: 264px;
   object-fit: cover;
   margin-top: 3px;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px rgba(25, 52, 73, 0.08);
+  border: 1px solid var(--line);
+  border-radius: 20px;
 }
 .profile-links {
   list-style: none;
