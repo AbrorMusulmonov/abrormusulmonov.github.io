@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -31,15 +31,16 @@
     <div class="page">
       <header class="site-header">
         <nav aria-label="Main navigation">
-          <a href="#about">About</a>
+          <a href="#about" aria-current="location">About</a>
           <a href="#research">Research</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
           <a
             class="nav-cv"
             href="assets/Abror_Musulmonov_CV.pdf"
             download="Abror_Musulmonov_CV.pdf"
-            >CV (PDF)</a
+            >CV <span class="file-type">PDF</span></a
           >
         </nav>
       </header>
@@ -83,8 +84,14 @@
                 <a
                   href="assets/Abror_Musulmonov_CV.pdf"
                   download="Abror_Musulmonov_CV.pdf"
-                  >Download CV</a
-                >
+                  >Download CV
+                  <svg
+                    class="download-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4" /></svg
+                ></a>
               </li>
             </ul>
           </div>
@@ -100,274 +107,298 @@
 
         <section id="news" aria-labelledby="news-heading">
           <h2 id="news-heading">News</h2>
-          <dl class="news-list">
-            <div>
-              <dt><time datetime="2026-02">Feb 2026</time></dt>
-              <dd>
-                Started as an ML research intern at EPFL’s LiGHT Laboratory,
-                working on Meditron.
-              </dd>
-            </div>
-            <div>
-              <dt><time datetime="2025-11">Nov 2025</time></dt>
-              <dd>
-                Participated in <a href="https://lauzhack.com/">Lauzhack</a> at
-                EPFL with a team AI project.
-              </dd>
-            </div>
-            <div>
-              <dt><time datetime="2025-08">Aug 2025</time></dt>
-              <dd>
-                Co-founded PureTalent and began leading its technical
-                development.
-              </dd>
-            </div>
-          </dl>
+          <div class="section-content">
+            <dl class="news-list">
+              <div>
+                <dt><time datetime="2026-02">Feb 2026</time></dt>
+                <dd>
+                  Started as an ML research intern at EPFL’s LiGHT Laboratory,
+                  working on Meditron.
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2025-11">Nov 2025</time></dt>
+                <dd>
+                  Participated in
+                  <a href="https://lauzhack.com/">Lauzhack</a> at EPFL with a
+                  team AI project.
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2025-08">Aug 2025</time></dt>
+                <dd>
+                  Co-founded PureTalent and began leading its technical
+                  development.
+                </dd>
+              </div>
+            </dl>
+          </div>
         </section>
 
         <section id="research" aria-labelledby="research-heading">
           <h2 id="research-heading">Research</h2>
-          <p>
-            I’m interested in how medical models handle multilingual data, and
-            in the dataset work needed to make those models useful for
-            low-resource languages.
-          </p>
-          <article class="research-entry">
-            <h3>Multilingual medical AI</h3>
-            <p class="position">
-              ML Research Intern · LiGHT Laboratory, EPFL
-              <span class="date">From February 2026</span>
-            </p>
+          <div class="section-content">
             <p>
-              Working with medical data and contributing to multilingual
-              Meditron development. My visiting-student research at EPFL also
-              focused on medical imaging and multimodal healthcare.
+              I’m interested in how medical models handle multilingual data, and
+              in the dataset work needed to make those models useful for
+              low-resource languages.
             </p>
-            <p class="entry-links">
-              <a href="https://huggingface.co/OpenMeditron">Meditron models</a>
-              <span aria-hidden="true">/</span>
-              <a href="https://www.light-laboratory.org/">Lab website</a>
-            </p>
-          </article>
-          <article class="research-entry">
-            <h3>AI collaboration between academia and industry</h3>
-            <p class="position">
-              Research Assistant · University of Münster
-              <span class="date">October 2024 – February 2025</span>
-            </p>
-            <p>
-              At the Sunrise AI Future Hub, I used Stanford Design Thinking to
-              study gaps between AI education and industry needs. I prototyped
-              the Pantheon Model, Reverse Recruitment App, and Research Paper
-              Insight Tool.
-            </p>
-            <p>
-              A paper from this work was accepted at ICID 2025, with proceedings
-              dated February 2026.
-            </p>
-            <p class="entry-links">
-              <a href="https://github.com/AbrorMusulmonov/Sunrise-AI-Future-Hub"
-                >Project repository</a
-              >
-            </p>
-          </article>
+            <article class="research-entry">
+              <h3>Multilingual medical AI</h3>
+              <p class="position">
+                ML Research Intern · LiGHT Laboratory, EPFL
+                <span class="date">From February 2026</span>
+              </p>
+              <p>
+                Working with medical data and contributing to multilingual
+                Meditron development. My visiting-student research at EPFL also
+                focused on medical imaging and multimodal healthcare.
+              </p>
+              <p class="entry-links">
+                <a href="https://huggingface.co/OpenMeditron"
+                  >Meditron models</a
+                >
+                <span aria-hidden="true">/</span>
+                <a href="https://www.light-laboratory.org/">Lab website</a>
+              </p>
+            </article>
+            <article class="research-entry">
+              <h3>AI collaboration between academia and industry</h3>
+              <p class="position">
+                Research Assistant · University of Münster
+                <span class="date">October 2024 – February 2025</span>
+              </p>
+              <p>
+                At the Sunrise AI Future Hub, I used Stanford Design Thinking to
+                study gaps between AI education and industry needs. I prototyped
+                the Pantheon Model, Reverse Recruitment App, and Research Paper
+                Insight Tool.
+              </p>
+              <p>
+                A paper from this work was accepted at ICID 2025, with
+                proceedings dated February 2026.
+              </p>
+              <p class="entry-links">
+                <a
+                  href="https://github.com/AbrorMusulmonov/Sunrise-AI-Future-Hub"
+                  >Project repository</a
+                >
+              </p>
+            </article>
+          </div>
         </section>
 
         <section id="projects" aria-labelledby="projects-heading">
           <h2 id="projects-heading">Selected projects</h2>
-          <ul class="project-list">
-            <li>
-              <h3>
-                <a href="https://github.com/AbrorMusulmonov/unitopaiweb"
-                  >Unitopai</a
-                >
-              </h3>
-              <p>
-                A platform to help students with university applications,
-                essays, profiles, and university matching.
-              </p>
-            </li>
-            <li>
-              <h3><a href="https://dermato.uz">Dermato</a></h3>
-              <p>
-                An AI dermatology project for skin-condition analysis and
-                personalized guidance.
-              </p>
-            </li>
-            <li>
-              <h3>
-                <a href="https://github.com/AbrorMusulmonov/Kwater-bot"
-                  >MySUW</a
-                >
-              </h3>
-              <p>
-                A Python Telegram bot for more efficient water use. Received a
-                Gold Award in the K-water Water Innovation Competition.
-              </p>
-            </li>
-            <li>
-              <h3><a href="https://www.yoqla.uz/">Yoqla</a></h3>
-              <p>An AI assistant for Uzbek legal and business questions.</p>
-            </li>
-            <li>
-              <h3><a href="https://www.youlp.uz/">YouLP website</a></h3>
-              <p>
-                The website for the Young Leadership Program, built to support
-                program outreach.
-              </p>
-            </li>
-            <li>
-              <h3>WikiStipendiya.uz</h3>
-              <p>A platform supporting the Uzbek Wikipedia content marathon.</p>
-            </li>
-          </ul>
+          <div class="section-content">
+            <ul class="project-list">
+              <li>
+                <h3>
+                  <a href="https://github.com/AbrorMusulmonov/unitopaiweb"
+                    >Unitopai</a
+                  >
+                </h3>
+                <p>
+                  A platform to help students with university applications,
+                  essays, profiles, and university matching.
+                </p>
+              </li>
+              <li>
+                <h3><a href="https://dermato.uz">Dermato</a></h3>
+                <p>
+                  An AI dermatology project for skin-condition analysis and
+                  personalized guidance.
+                </p>
+              </li>
+              <li>
+                <h3>
+                  <a href="https://github.com/AbrorMusulmonov/Kwater-bot"
+                    >MySUW</a
+                  >
+                </h3>
+                <p>
+                  A Python Telegram bot for more efficient water use. Received a
+                  Gold Award in the K-water Water Innovation Competition.
+                </p>
+              </li>
+              <li>
+                <h3><a href="https://www.yoqla.uz/">Yoqla</a></h3>
+                <p>An AI assistant for Uzbek legal and business questions.</p>
+              </li>
+              <li>
+                <h3><a href="https://www.youlp.uz/">YouLP website</a></h3>
+                <p>
+                  The website for the Young Leadership Program, built to support
+                  program outreach.
+                </p>
+              </li>
+              <li>
+                <h3>WikiStipendiya.uz</h3>
+                <p>
+                  A platform supporting the Uzbek Wikipedia content marathon.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section id="experience" aria-labelledby="experience-heading">
           <h2 id="experience-heading">Experience</h2>
-          <div class="cv-list">
-            <article>
-              <div class="entry-heading">
-                <h3>PureTalent</h3>
-                <p class="date">Aug 2025 – present</p>
-              </div>
-              <p class="role">Co-founder &amp; CTO</p>
-              <p>
-                Leading technical development of an AI-powered mentorship
-                platform for grants and scholarships.
-              </p>
-            </article>
-            <article>
-              <div class="entry-heading">
-                <h3>Tilmoch</h3>
-                <p class="date">Jun 2025 – Jun 2026</p>
-              </div>
-              <p class="role">Data Annotator</p>
-              <p>
-                Built corpora with 5,000+ samples from low-resource Turkic
-                languages and verified more than 2,000 dataset entries.
-              </p>
-            </article>
-            <article>
-              <div class="entry-heading">
-                <h3>AI Future Hub</h3>
-                <p class="date">Oct 2024 – Sep 2025</p>
-              </div>
-              <p class="role">Data Analyst</p>
-              <p>
-                Studied AI education needs and helped launch a learning platform
-                involving more than 50 participants in AI projects.
-              </p>
-            </article>
-            <article>
-              <div class="entry-heading">
-                <h3>iQtidorly</h3>
-                <p class="date">Jun – Nov 2024</p>
-              </div>
-              <p class="role">Data Analyst</p>
-              <p>
-                Analyzed student participation and automated event tracking and
-                reporting with Google Sheets.
-              </p>
-            </article>
-            <article>
-              <div class="entry-heading">
-                <h3>Deepen</h3>
-                <p class="date">Jan – May 2024</p>
-              </div>
-              <p class="role">Data Analyst</p>
-              <p>
-                Researched more than 50 fitness studios and helped onboard 15+
-                studios to the ERP platform.
-              </p>
-            </article>
+          <div class="section-content">
+            <div class="cv-list">
+              <article>
+                <div class="entry-heading">
+                  <h3>PureTalent</h3>
+                  <p class="date">Aug 2025 – present</p>
+                </div>
+                <p class="role">Co-founder &amp; CTO</p>
+                <p>
+                  Leading technical development of an AI-powered mentorship
+                  platform for grants and scholarships.
+                </p>
+              </article>
+              <article>
+                <div class="entry-heading">
+                  <h3>Tilmoch</h3>
+                  <p class="date">Jun 2025 – Jun 2026</p>
+                </div>
+                <p class="role">Data Annotator</p>
+                <p>
+                  Built corpora with 5,000+ samples from low-resource Turkic
+                  languages and verified more than 2,000 dataset entries.
+                </p>
+              </article>
+              <article>
+                <div class="entry-heading">
+                  <h3>AI Future Hub</h3>
+                  <p class="date">Oct 2024 – Sep 2025</p>
+                </div>
+                <p class="role">Data Analyst</p>
+                <p>
+                  Studied AI education needs and helped launch a learning
+                  platform involving more than 50 participants in AI projects.
+                </p>
+              </article>
+              <article>
+                <div class="entry-heading">
+                  <h3>iQtidorly</h3>
+                  <p class="date">Jun – Nov 2024</p>
+                </div>
+                <p class="role">Data Analyst</p>
+                <p>
+                  Analyzed student participation and automated event tracking
+                  and reporting with Google Sheets.
+                </p>
+              </article>
+              <article>
+                <div class="entry-heading">
+                  <h3>Deepen</h3>
+                  <p class="date">Jan – May 2024</p>
+                </div>
+                <p class="role">Data Analyst</p>
+                <p>
+                  Researched more than 50 fitness studios and helped onboard 15+
+                  studios to the ERP platform.
+                </p>
+              </article>
+            </div>
           </div>
         </section>
 
         <section id="education" aria-labelledby="education-heading">
           <h2 id="education-heading">Education</h2>
-          <div class="cv-list education-list">
-            <article>
-              <div class="entry-heading">
-                <h3>EPFL, Switzerland</h3>
-                <p class="date">Jan – Jun 2026</p>
-              </div>
-              <p>Visiting Student, LiGHT Laboratory · Meditron project</p>
-            </article>
-            <article>
-              <div class="entry-heading">
-                <h3>University of Münster, Germany</h3>
-                <p class="date">Oct 2024 – Feb 2025</p>
-              </div>
-              <p>Visiting Student, Sunrise AI Future Hub</p>
-            </article>
-            <article>
-              <div class="entry-heading">
-                <h3>Inha University in Tashkent</h3>
-                <p class="date">Sep 2022 – Aug 2026</p>
-              </div>
-              <p>
-                Bachelor’s program in Computer and Software Engineering<br />Four-year
-                merit-based full scholarship
-              </p>
-            </article>
+          <div class="section-content">
+            <div class="cv-list education-list">
+              <article>
+                <div class="entry-heading">
+                  <h3>EPFL, Switzerland</h3>
+                  <p class="date">Jan – Jun 2026</p>
+                </div>
+                <p>Visiting Student, LiGHT Laboratory · Meditron project</p>
+              </article>
+              <article>
+                <div class="entry-heading">
+                  <h3>University of Münster, Germany</h3>
+                  <p class="date">Oct 2024 – Feb 2025</p>
+                </div>
+                <p>Visiting Student, Sunrise AI Future Hub</p>
+              </article>
+              <article>
+                <div class="entry-heading">
+                  <h3>Inha University in Tashkent</h3>
+                  <p class="date">Sep 2022 – Aug 2026</p>
+                </div>
+                <p>
+                  Bachelor’s program in Computer and Software Engineering<br />Four-year
+                  merit-based full scholarship
+                </p>
+              </article>
+            </div>
           </div>
         </section>
 
         <section id="community" aria-labelledby="community-heading">
           <h2 id="community-heading">Community &amp; other interests</h2>
-          <p>
-            From 2024 to 2025, I led GDG on Campus at Inha University. I
-            organized the “Built with AI” event with leads from eight
-            universities, 10 speakers, and more than 500 participants. I also
-            co-organized DevFest 2024 with GDG Tashkent.
-          </p>
-          <p>
-            I’ve coordinated the Young Leaders Development Project, co-founded
-            the Youth Diplomatic Conference, and mentored more than 20
-            university applicants through Inha’s Academic Support Club.
-          </p>
-          <p>
-            Outside of work, I enjoy travelling, running, and listening to
-            podcasts. I share some of what I learn on
-            <a href="https://t.me/Digital_Researcher">my Telegram blog</a>.
-          </p>
+          <div class="section-content">
+            <p>
+              From 2024 to 2025, I led GDG on Campus at Inha University. I
+              organized the “Built with AI” event with leads from eight
+              universities, 10 speakers, and more than 500 participants. I also
+              co-organized DevFest 2024 with GDG Tashkent.
+            </p>
+            <p>
+              I’ve coordinated the Young Leaders Development Project, co-founded
+              the Youth Diplomatic Conference, and mentored more than 20
+              university applicants through Inha’s Academic Support Club.
+            </p>
+            <p>
+              Outside of work, I enjoy travelling, running, and listening to
+              podcasts. I share some of what I learn on
+              <a href="https://t.me/Digital_Researcher">my Telegram blog</a>.
+            </p>
+          </div>
         </section>
 
         <section id="awards" aria-labelledby="awards-heading">
           <h2 id="awards-heading">Selected awards</h2>
-          <ul class="awards-list">
-            <li>
-              Huawei ImagineWiFi7 Competition — one of three global winners
-            </li>
-            <li>Urban Tech Uzbekistan — 1st place, AI / Health Tech</li>
-            <li>K-water Water Innovation Competition — Gold Award</li>
-            <li>
-              Mirzo Ulug‘bek Vorislari 2025 — republican competition winner
-            </li>
-            <li>MITC Scholarship, Ministry of Digital Technologies</li>
-            <li>Shinhan Financial Group Hope Foundation Scholarship</li>
-          </ul>
+          <div class="section-content">
+            <ul class="awards-list">
+              <li>
+                Huawei ImagineWiFi7 Competition — one of three global winners
+              </li>
+              <li>Urban Tech Uzbekistan — 1st place, AI / Health Tech</li>
+              <li>K-water Water Innovation Competition — Gold Award</li>
+              <li>
+                Mirzo Ulug‘bek Vorislari 2025 — republican competition winner
+              </li>
+              <li>MITC Scholarship, Ministry of Digital Technologies</li>
+              <li>Shinhan Financial Group Hope Foundation Scholarship</li>
+            </ul>
+          </div>
         </section>
         <section id="contact" aria-labelledby="contact-heading">
           <h2 id="contact-heading">Contact</h2>
-          <p>
-            The best way to reach me is by email:<br /><a
-              class="email"
-              href="mailto:abrorjon.musulmonov@gmail.com"
-              >abrorjon.musulmonov@gmail.com</a
-            >
-          </p>
-          <p>
-            You can also find me on
-            <a href="https://www.linkedin.com/in/abrormusulmonov/">LinkedIn</a>
-            or download my
-            <a
-              href="assets/Abror_Musulmonov_CV.pdf"
-              download="Abror_Musulmonov_CV.pdf"
-              >CV (PDF)</a
-            >.
-          </p>
+          <div class="section-content">
+            <p>
+              The best way to reach me is by email:<br /><a
+                class="email"
+                href="mailto:abrorjon.musulmonov@gmail.com"
+                >abrorjon.musulmonov@gmail.com</a
+              >
+            </p>
+            <p>
+              You can also find me on
+              <a href="https://www.linkedin.com/in/abrormusulmonov/"
+                >LinkedIn</a
+              >
+              or download my
+              <a
+                href="assets/Abror_Musulmonov_CV.pdf"
+                download="Abror_Musulmonov_CV.pdf"
+                >CV (PDF)</a
+              >.
+            </p>
+          </div>
         </section>
       </main>
       <footer>

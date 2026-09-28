@@ -2,7 +2,7 @@
 
 Personal academic website: https://abrormusulmonov.github.io/
 
-Plain HTML and CSS with a small script for the footer year. System fonts, no build step, no external dependencies. The site and CV work with JavaScript disabled.
+Plain HTML and CSS with a small script for the footer year and navigation highlighting. System fonts, no build step, no external dependencies. The site and CV work with JavaScript disabled.
 
 ## Local preview
 
