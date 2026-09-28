@@ -8,7 +8,10 @@
   let pending = false;
 
   function updateNavigation() {
-    const offset = header.offsetHeight + 40;
+    const anchorOffset = parseFloat(
+      getComputedStyle(document.documentElement).scrollPaddingTop,
+    );
+    const offset = Math.max(header.offsetHeight + 24, anchorOffset + 2);
     let current = sections[0];
     sections.forEach((section) => {
       if (section.getBoundingClientRect().top <= offset) current = section;
